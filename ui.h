@@ -7,6 +7,8 @@
 #define MAX_INTENSITY 13
 #define MIN_INTENSITY 2
 
+#include <stdbool.h>
+
 typedef struct cell {
 	char char_value;
 	int intensity;

@@ -6,17 +6,17 @@
 #include "ui.h"
 #include "matrix.h"
 
-#define ITERATIONS 300
+#define ITERATIONS 100000
 #define REFRESH_DELAY 50000L
 
 int main (int arc, char **argv) {
 	if (!init_ui()) {
 		return EXIT_FAILURE;
-	}	
+	}
 
 	matrix_init();
 
-	for (int i = 0; i M ITERATIONS; i++) {
+	for (int i = 0; i < ITERATIONS; i++) {
 		matrix_update();
 		show_matrix();
 		usleep(REFRESH_DELAY);
